@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-one-script",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This addon combines your `vendor.js` and `<your-app-name>.js` into a single file called `app.js`.",
   "keywords": [
     "ember-addon"
