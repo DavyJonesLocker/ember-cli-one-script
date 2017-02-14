@@ -1,27 +1,28 @@
 # ember-cli-one-script
 
-This README outlines the details of collaborating on this Ember addon.
+This addon combines your `vendor.js` and `<your-app-name>.js` into a single
+file called `app.js`.
 
-## Installation
+You also need to update your `app/index.html`:
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-one-script`
-* `npm install`
-* `bower install`
+```html
+<!-- change the following -->
+<script src="{{rootURL}}assets/vendor.js"></script>
+<script src="{{rootURL}}assets/my-project.js"></script>
+<!-- to -->
+<script src="{{rootURL}}assets/app.js"></script>
+```
 
-## Running
+## Want to help?
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Please do! We are always looking to improve this library. Please see our
+[Contribution Guidelines](https://github.com/dockyard/ember-cli-one-script/blob/master/CONTRIBUTING.md)
+on how to properly submit issues and pull requests.
 
-## Running Tests
+## Legal
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+[DockYard](http://dockyard.com/), Inc. &copy; 2016
 
-## Building
+[@dockyard](http://twitter.com/dockyard)
 
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+[Licensed under the MIT license](http://www.opensource.org/licenses/mit-license.php)

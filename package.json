@@ -1,19 +1,21 @@
 {
   "name": "ember-cli-one-script",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "This addon combines your `vendor.js` and `<your-app-name>.js` into a single file called `app.js`.",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
-  "repository": "",
+  "author": "Marten Schilstra <mail@martenschilstra.nl>",
+  "repository": "https://github.com/DockYard/ember-cli-one-script",
   "dependencies": {
+    "broccoli-concat": "^3.1.1",
+    "broccoli-merge-trees": "^1.2.1"
   },
   "engines": {
     "node": ">= 4.0.0"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "before": "broccoli-asset-rev"
   }
 }
