@@ -10,7 +10,7 @@ You also need to update your `app/index.html`:
 <script src="{{rootURL}}assets/vendor.js"></script>
 <script src="{{rootURL}}assets/my-project.js"></script>
 <!-- to -->
-<script src="{{rootURL}}assets/app.js"></script>
+<script async src="{{rootURL}}assets/app.js"></script>
 ```
 
 ## Want to help?
