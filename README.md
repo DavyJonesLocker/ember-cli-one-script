@@ -2,6 +2,11 @@
 
 **[ember-cli-one-script is built and maintained by DockYard, contact us for expert Ember.js consulting](https://dockyard.com/ember-consulting)**.
 
+## Installation
+`ember install ember-cli-one-script`
+
+## Usage
+
 This addon combines your `vendor.js` and `<your-app-name>.js` into a single
 file called `app.js`.
 
