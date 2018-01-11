@@ -10,9 +10,18 @@
 This addon combines your `vendor.js` and `<your-app-name>.js` into a single
 file called `app.js`.
 
+This addon combines your `css.js` and `<your-app-name>.css` into a single
+file called `app.css`.
+
 You also need to update your `app/index.html`:
 
 ```html
+<!-- change the following -->
+<link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+<link rel="stylesheet" href="{{rootURL}}assets/my-project.css">
+<!-- to -->
+<link rel="stylesheet" href="{{rootURL}}assets/app.css">
+
 <!-- change the following -->
 <script src="{{rootURL}}assets/vendor.js"></script>
 <script src="{{rootURL}}assets/my-project.js"></script>
