@@ -12,12 +12,20 @@ module.exports = {
       return tree;
     }
 
-    return mergeTrees([tree, concat(tree, {
+    const jsTree = mergeTrees([tree, concat(tree, {
       headerFiles: [
         'assets/vendor.js',
         `assets/${this.project.pkg.name}.js`
       ],
       outputFile: 'assets/app.js'
+    })]);
+
+    return mergeTrees([jsTree, concat(jsTree, {
+      headerFiles: [
+        'assets/vendor.css',
+        `assets/${this.project.pkg.name}.css`
+      ],
+      outputFile: 'assets/app.css'
     })]);
   }
 };
